@@ -1,14 +1,19 @@
 body {
     background-color: #CCCCCC;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     background-image: linear-gradient(to bottom, #301135, #652570);
     margin: auto;
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .titulo {
@@ -26,64 +31,66 @@ body {
 
 .formulario {
     background-image: linear-gradient(to top, #301135, #652570);
-    width: 600px;
-    margin-left: 45px;
+    margin: auto;
     margin-bottom: 20px;
     border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .titulo_forms {
     text-align: center;
-    font-size: 28px;
+    font-size: 1.4rem;
     color: #FFFFFF;
     padding: 20px;
 }
 
 input {
-    width: 75%;
+    width: calc(100% - 10px);
     height: 22px;
-    padding: 10px;
+    padding: 20px;
     font-size: 1rem;
     border-radius: 5px;
     border: 0;
-    margin: 10px;
-    margin-left: 60px;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
 .cards { 
     display: flex;
-    width: 90%;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .esporte, .simulacao, .estrategia {
     background-image: linear-gradient(to bottom, #3E5FEF, #63ADFA);
-    width: 100%;
+    width: calc(100% / 3 - 40px);
     border: 10px solid #2A40DD;
     border-radius: 5px;
-    margin: 15px 15px 20px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 p {
-    text-align: center;
     color: #FAF4FC;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
-Object {
+object {
     width: 70%;
-    margin-left: 20px;
-    align-items: center;
+    margin: 20px auto;
+    display: block;
 }
 
 button {
-    display: flex;
-    margin: 20px 0 10px 30px;
+    margin: 20px 0;
     color: #DDF5FB;
     background-color: #1D0C20;
     border-radius: 4px;
     padding: 10px 15px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
@@ -93,4 +100,32 @@ button:hover {
 footer {
     color: #FFFFFF;
     text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .esporte, .simulacao, .estrategia {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 1.4rem;
+    }
+
+    .titulo_forms {
+        font-size: 1.2rem;
+    }
+
+    .esporte, .simulacao, .estrategia {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
