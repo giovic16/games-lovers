@@ -1,0 +1,96 @@
+body {
+    background-color: #CCCCCC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+    background-image: linear-gradient(to bottom, #301135, #652570);
+    margin: auto;
+    width: 700px;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.titulo {
+    color: #FACD33;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.descricao {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.formulario {
+    background-image: linear-gradient(to top, #301135, #652570);
+    width: 600px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.titulo_forms {
+    text-align: center;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+input {
+    width: 75%;
+    height: 22px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    margin-left: 60px;
+}
+
+.cards { 
+    display: flex;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.esporte, .simulacao, .estrategia {
+    background-image: linear-gradient(to bottom, #3E5FEF, #63ADFA);
+    width: 100%;
+    border: 10px solid #2A40DD;
+    border-radius: 5px;
+    margin: 15px 15px 20px 20px;
+}
+
+p {
+    text-align: center;
+    color: #FAF4FC;
+    font-size: 20px;
+}
+
+Object {
+    width: 70%;
+    margin-left: 20px;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    margin: 20px 0 10px 30px;
+    color: #DDF5FB;
+    background-color: #1D0C20;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5C2167;
+}
+
+footer {
+    color: #FFFFFF;
+    text-align: center;
+}
